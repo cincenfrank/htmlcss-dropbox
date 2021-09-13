@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* Tag Selectors */
@@ -96,11 +96,19 @@ h5 {
 .padding-top-100 {
   padding-top: 100px;
 }
+
+.padding-left-40 {
+  padding-left: 40px;
+}
+
 .font-size {
   font-size: 77px;
 }
 .color-blue {
   color: #2165f6;
+}
+.color-grey {
+  color: #6f7e8a;
 }
 
 /* Utilities */
@@ -134,10 +142,14 @@ h5 {
 
 .btn {
   padding: 5px 15px;
-  background-color: #2165f6;
-  color: #ffffff;
+  border: 1px solid black;
   display: inline-block;
   text-decoration: none;
+  color: black;
+}
+
+.inline-link {
+  color: black;
 }
 
 /* Elements */
@@ -168,7 +180,7 @@ h5 {
 
 .plan-box__content__divider {
   width: 25%;
-  color: #6f7e8a;
+  border-bottom: 1px solid #6f7e8a;
 }
 /* Modifiers */
 .container--small {
@@ -207,6 +219,12 @@ h5 {
   text-align: center;
 }
 
+.btn--blue {
+  background-color: #2165f6;
+  color: #ffffff;
+  border: none;
+}
+
 .list--fa-plan-box {
   margin-left: 2em;
 }
@@ -214,6 +232,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.plan-box--min-height {
-  min-height: 1000px;
+.plan-box__content--min-height {
+  min-height: 900px;
 }
