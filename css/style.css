@@ -76,16 +76,10 @@ h5 {
   width: calc(100% / 9 * 6);
 }
 
-.col-2x13 {
-  width: calc(100vw / 13 * 2);
+.col-1x5 {
+  width: calc(100% / 5);
 }
 
-.col-4x13 {
-  width: calc(100% / 13 * 4);
-}
-.col-5x13 {
-  width: calc(100% / 13 * 5);
-}
 .client-grid::after,
 .client-grid__block::after {
   clear: both;
@@ -110,6 +104,11 @@ h5 {
   height: 50%;
   float: left;
   text-align: center;
+}
+.footer__select {
+  background-color: black;
+  color: white;
+  border: none;
 }
 
 .padding-lr-20 {
@@ -142,8 +141,21 @@ h5 {
   padding-top: 100px;
 }
 
+.padding-tb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.padding-tb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .padding-left-40 {
   padding-left: 40px;
+}
+
+.margin-top-200 {
+  margin-top: 200px;
 }
 
 .font-size {
@@ -157,6 +169,12 @@ h5 {
 }
 .color-inverted {
   filter: invert(100%);
+}
+.color-white {
+  color: white;
+}
+.color-red {
+  color: #61082b;
 }
 
 .bg-color--green {
@@ -183,7 +201,9 @@ h5 {
 .bg-color--light-grey {
   background-color: #f5f5f5;
 }
-
+.bg-color--black {
+  background-color: black;
+}
 .float-right {
   float: right;
 }
@@ -202,6 +222,9 @@ h5 {
 
 .width-60 {
   width: 60%;
+}
+.width-50 {
+  width: 50%;
 }
 
 /* Style Classes */
@@ -267,6 +290,10 @@ h5 {
   display: inline-block;
 }
 
+.list__item__link--white {
+  color: #ffffff;
+}
+
 .plan-box__header {
   border: 1px solid #6f7e8a;
   text-align: center;
@@ -279,6 +306,10 @@ h5 {
 
 .plan-box__content__divider {
   width: 25%;
+  border-bottom: 1px solid #6f7e8a;
+}
+.footer__content__divider {
+  width: 5%;
   border-bottom: 1px solid #6f7e8a;
 }
 /* Modifiers */
