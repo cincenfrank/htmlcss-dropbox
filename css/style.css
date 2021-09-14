@@ -31,10 +31,6 @@ h5 {
   font-size: 16px;
 }
 
-.small-text {
-  font-size: 14px;
-}
-
 /* Layout Classes */
 .container {
   max-width: 1367px;
@@ -207,8 +203,15 @@ h5 {
 .float-right {
   float: right;
 }
+.float-left {
+  float: left;
+}
 
 /* Utilities */
+
+.small-text {
+  font-size: 14px;
+}
 .clearfix::after {
   content: "";
   clear: both;
@@ -244,12 +247,17 @@ h5 {
   /* position: relative; */
 }
 .faq__item {
-  position: relative;
+  /* position: relative; */
 }
 .faq__item__expand-icon {
   position: absolute;
   left: calc(100% - 16px);
   top: 50%;
+  float: right;
+}
+
+.pos-rel {
+  position: relative;
 }
 
 .btn {
