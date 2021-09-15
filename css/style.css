@@ -382,11 +382,11 @@ details[open] .faq__item__expand-icon {
   margin-bottom: 10px;
 }
 .client-grid__block--small {
-  width: calc(100vw / 13 * 4);
+  width: calc(100% / 13 * 4);
   height: calc(100vw / 13 * 4);
 }
 .client-grid__block--large {
-  width: calc(100vw / 13 * 5);
+  width: calc(100% / 13 * 5);
   height: calc(100vw / 13 * 4);
   overflow: auto;
 }
