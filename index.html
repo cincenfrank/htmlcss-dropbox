@@ -84,10 +84,22 @@
         <div class="main-block container container--small padding-top-100 ">
             <h2 class="padding-top-100 ">Trova il piano Dropbox Business che fa per te</h2>
             <!-- Radio Section  -->
-            <form action="" class="padding-top-50 ">
+            <!-- <form action="" class="padding-top-50 ">
                 <input type="radio" name="planPeriodType" id="month"> <label for="fm">Fatturazione Mensile</label>
                 <input type="radio" name="planPeriodType" id="year"> <label for="fa">Fatturazione Annuale</label>
-            </form>
+            </form> -->
+            <div class="padding-top-50">
+                <label class="radio-element">Fattuazione Mensile
+                    <input class="radio-element__input" checked="checked" type="radio" name="plan-period-type"
+                        id="month">
+                    <span class="radio-element__checkbox"></span>
+                </label>
+                <label class="radio-element">Fattuazione Mensile
+                    <input class="radio-element__input" type="radio" name="plan-period-type" id="year">
+                    <span class="radio-element__checkbox"></span>
+                </label>
+            </div>
+
             <!-- Plans Columns -->
             <div class="row padding-top-30">
                 <!-- Professional Plan -->

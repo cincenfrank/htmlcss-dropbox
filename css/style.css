@@ -252,6 +252,17 @@ h5 {
   background-color: #f5f5f5;
 }
 
+.radio-element {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding-right: 20px;
+
+  user-select: none;
+}
+
 /* Elements */
 .header__download-icon {
   font-size: 60px;
@@ -321,6 +332,46 @@ details[open] .faq__item__expand-icon {
 .faq__title {
   display: inline-block;
   padding-right: 60px;
+}
+
+.radio-element__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-element__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+.radio-element__checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+}
+
+.radio-element:hover .radio-element__checkbox {
+  background-color: #ccc;
+}
+
+.radio-element__input:checked ~ .radio-element__checkbox {
+  background-color: #2165f6;
+}
+
+.radio-element__input:checked ~ .radio-element__checkbox::after {
+  display: block;
 }
 /* Modifiers */
 
@@ -425,3 +476,5 @@ details[open] .faq__item__expand-icon {
     transform: translateY(0);
   }
 }
+
+/* ---------- */
