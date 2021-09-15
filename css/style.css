@@ -239,20 +239,23 @@ h5 {
 
 .btn {
   padding: 5px 15px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: inline-block;
   text-decoration: none;
   color: black;
   transition: box-shadow 0.2s linear;
+  background-color: #ffffff;
 }
 
 .btn:hover {
   box-shadow: 2px 2px 5px #6f7e8a;
+  background-color: #f5f5f5;
 }
 
 /* Elements */
 .header__download-icon {
   font-size: 60px;
+  animation: arrow-down 4s infinite;
 }
 
 .client-grid__block {
@@ -264,22 +267,36 @@ h5 {
   float: left;
   text-align: center;
 }
+.faq__item {
+  list-style: none;
+}
 .footer__select {
   background-color: black;
   color: white;
   border: none;
 }
 .faq__item__expand-icon {
-  float: right;
+  /* float: right; */
   position: absolute;
-  left: calc(100% - 16px);
-  top: 50%;
+  right: 0px;
+  top: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transform: rotateZ(0deg);
+  transition: transform 0.3s;
+}
+
+details[open] .faq__item__expand-icon {
+  transform: rotateZ(180deg);
 }
 
 .list__item__link {
   text-decoration: none;
   color: black;
   display: inline-block;
+}
+.list__item__link:hover {
+  text-decoration: underline;
 }
 
 .plan-box__header {
@@ -299,6 +316,11 @@ h5 {
 .footer__content__divider {
   width: 5%;
   border-bottom: 1px solid #6f7e8a;
+}
+
+.faq__title {
+  display: inline-block;
+  padding-right: 60px;
 }
 /* Modifiers */
 
@@ -370,7 +392,36 @@ h5 {
   color: #ffffff;
   border: none;
 }
+.btn--border {
+  border: 1px solid black;
+}
+
+.btn--blue:hover {
+  background-color: #3b84ff;
+}
 
 .plan-box__content--min-height {
   min-height: 900px;
+}
+
+/* Animations  */
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
