@@ -243,7 +243,7 @@ h5 {
   display: inline-block;
   text-decoration: none;
   color: black;
-  transition: box-shadow 0.2s linear;
+  transition: all 0.2s linear;
   background-color: #ffffff;
 }
 
@@ -277,6 +277,7 @@ h5 {
   height: 50%;
   float: left;
   text-align: center;
+  transition: box-shadow 0.3s linear;
 }
 
 .client-grid__square:hover {
