@@ -278,6 +278,11 @@ h5 {
   float: left;
   text-align: center;
 }
+
+.client-grid__square:hover {
+  box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
 .faq__item {
   list-style: none;
 }
